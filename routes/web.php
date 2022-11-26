@@ -16,4 +16,6 @@ use \App\Http\Controllers\backend\AdminController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin-dashbord',[AdminController::class,'dashboard']);
+Route::get('/admin-dashboard',[AdminController::class,'dashboard']);
+Route::get('/admin-master',[AdminController::class,'master']);
+Route::get('/admin-new-page',[AdminController::class,'newPage']);
